@@ -1,8 +1,49 @@
-//
-//  Ocean.swift
-//  MAPD724-W2022-ICE1
-//
-//  Created by Tom Tsiliopoulos on 2022-01-19.
-//
+import GameplayKit
+import SpriteKit
 
-import Foundation
+class Ocean : GameObject
+{
+    
+    // constructor / initializer
+    init()
+    {
+        super.init(imageString: "ocean", initialScale: 2.0)
+        Start()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    // LifeCycle Functions
+    override func CheckBounds()
+    {
+        if(position.y <= -773)
+        {
+            Reset()
+        }
+    }
+    
+    override func Reset()
+    {
+        position.y = 773
+    }
+    
+    // initialization
+    override func Start()
+    {
+        zPosition = 0
+        verticalSpeed = 5.0
+    }
+    
+    override func Update()
+    {
+        Move()
+        CheckBounds()
+    }
+    
+    func Move()
+    {
+        position.y -= verticalSpeed!
+    }
+}

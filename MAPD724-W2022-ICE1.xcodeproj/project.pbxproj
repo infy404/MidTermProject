@@ -72,6 +72,7 @@
 		E92229FB2798E0C300353E41 /* ocean.png in Resources */ = {isa = PBXBuildFile; fileRef = E92229FA2798E0C300353E41 /* ocean.png */; };
 		E92229FE2798E1FC00353E41 /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92229FD2798E1FC00353E41 /* GameObject.swift */; };
 		E9222A002798E72F00353E41 /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92229FF2798E72F00353E41 /* GameProtocol.swift */; };
+		E9222A032798EBFA00353E41 /* Ocean.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9222A022798EBFA00353E41 /* Ocean.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -141,6 +142,7 @@
 		E92229FA2798E0C300353E41 /* ocean.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ocean.png; sourceTree = "<group>"; };
 		E92229FD2798E1FC00353E41 /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
 		E92229FF2798E72F00353E41 /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
+		E9222A022798EBFA00353E41 /* Ocean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ocean.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 		E9222966278FAAC600353E41 = {
 			isa = PBXGroup;
 			children = (
+				E9222A012798EBE600353E41 /* GameObjects */,
 				E92229FC2798E1CB00353E41 /* Core */,
 				E9222971278FAAC600353E41 /* MAPD724-W2022-ICE1 */,
 				E9222970278FAAC600353E41 /* Products */,
@@ -288,6 +291,14 @@
 				E92229FF2798E72F00353E41 /* GameProtocol.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		E9222A012798EBE600353E41 /* GameObjects */ = {
+			isa = PBXGroup;
+			children = (
+				E9222A022798EBFA00353E41 /* Ocean.swift */,
+			);
+			path = GameObjects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,6 +433,7 @@
 				E9222A002798E72F00353E41 /* GameProtocol.swift in Sources */,
 				E9222979278FAAC600353E41 /* GameScene.swift in Sources */,
 				E922297B278FAAC600353E41 /* GameViewController.swift in Sources */,
+				E9222A032798EBFA00353E41 /* Ocean.swift in Sources */,
 				E9222973278FAAC600353E41 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
