@@ -13,6 +13,7 @@ class GameScene: SKScene
     var ocean: Ocean?
     var island: Island?
     var plane: Plane?
+    var cloud: Cloud?
     
       
     override func didMove(to view: SKView)
@@ -35,6 +36,10 @@ class GameScene: SKScene
         plane = Plane()
         plane?.position = CGPoint(x: 0, y: -495)
         addChild(plane!)
+        
+        // add a single cloud to the scene
+        cloud = Cloud()
+        addChild(cloud!)
         
     }
     
@@ -78,5 +83,6 @@ class GameScene: SKScene
         ocean?.Update()
         island?.Update()
         plane?.Update()
+        cloud?.Update()
     }
 }
