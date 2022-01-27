@@ -11,6 +11,7 @@ class GameScene: SKScene
 {
     // instance variables
     var ocean: Ocean?
+    var island: Island?
     var plane: Plane?
     
       
@@ -25,6 +26,10 @@ class GameScene: SKScene
         ocean = Ocean() // allocate memory
         ocean?.position = CGPoint(x: 0, y: 773)
         addChild(ocean!) // add the ocean to the scene
+        
+        // add island to the scene
+        island = Island()
+        addChild(island!)
         
         // add plane to the scene
         plane = Plane()
@@ -71,6 +76,7 @@ class GameScene: SKScene
     override func update(_ currentTime: TimeInterval)
     {
         ocean?.Update()
+        island?.Update()
         plane?.Update()
     }
 }
