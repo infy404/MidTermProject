@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E922296E278FAAC600353E41"
                BuildableName = "MAPD724-W2022-ICE2.app"
-               BlueprintName = "MAPD724-W2022-ICE2"
-               ReferencedContainer = "container:MAPD724-W2022-ICE2.xcodeproj">
+               BlueprintName = "MAPD724-W2022-ICE3"
+               ReferencedContainer = "container:MAPD724-W2022-ICE3.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,8 +46,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E922296E278FAAC600353E41"
             BuildableName = "MAPD724-W2022-ICE2.app"
-            BlueprintName = "MAPD724-W2022-ICE2"
-            ReferencedContainer = "container:MAPD724-W2022-ICE2.xcodeproj">
+            BlueprintName = "MAPD724-W2022-ICE3"
+            ReferencedContainer = "container:MAPD724-W2022-ICE3.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E922296E278FAAC600353E41"
             BuildableName = "MAPD724-W2022-ICE2.app"
-            BlueprintName = "MAPD724-W2022-ICE2"
-            ReferencedContainer = "container:MAPD724-W2022-ICE2.xcodeproj">
+            BlueprintName = "MAPD724-W2022-ICE3"
+            ReferencedContainer = "container:MAPD724-W2022-ICE3.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
