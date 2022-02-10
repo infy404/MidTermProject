@@ -11,12 +11,16 @@ import GameplayKit
 
 class GameViewController: UIViewController, GameManager {
     
+    // Button Outlets
     
+    @IBOutlet weak var StartButton: UIButton!
+    
+    // Label Outlets
     @IBOutlet weak var ScoreLabel: UILabel!
     @IBOutlet weak var LivesLabel: UILabel!
+    @IBOutlet weak var StartLabel: UILabel!
     
     var currentScene: SKScene?
-    
     
     override func viewDidLoad()
     {
@@ -28,12 +32,9 @@ class GameViewController: UIViewController, GameManager {
         ScoreLabel.isHidden = true
         CollisionManager.gameViewController = self
         
-        SetScene(sceneName: "GameScene")
+        SetScene(sceneName: "StartScene")
         
-        //ScoreManager.Score = 0
-        //ScoreManager.Lives = 5
-        //updateLivesLabel()
-        //updateScoreLabel()
+        
     }
 
     override var shouldAutorotate: Bool {
@@ -87,6 +88,8 @@ class GameViewController: UIViewController, GameManager {
     
     func PresentStartScene()
     {
+        StartButton.isHidden = false
+        StartLabel.isHidden = false
         ScoreLabel.isHidden = true
         LivesLabel.isHidden = true
     }
@@ -96,6 +99,20 @@ class GameViewController: UIViewController, GameManager {
         ScoreLabel.isHidden = true
         LivesLabel.isHidden = true
         SetScene(sceneName: "EndScene")
+    }
+    
+    
+    @IBAction func StartButton_Pressed(_ sender: UIButton)
+    {
+        StartButton.isHidden = true
+        StartLabel.isHidden = true
+        ScoreLabel.isHidden = false
+        LivesLabel.isHidden = false
+        ScoreManager.Score = 0
+        ScoreManager.Lives = 5
+        updateLivesLabel()
+        updateScoreLabel()
+        SetScene(sceneName: "GameScene")
     }
     
 }
