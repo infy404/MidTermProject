@@ -9,37 +9,31 @@ import UIKit
 import SpriteKit
 import GameplayKit
 
-class GameViewController: UIViewController {
-    @IBOutlet weak var ScoreLabel: UILabel!
+class GameViewController: UIViewController, GameManager {
     
+    
+    @IBOutlet weak var ScoreLabel: UILabel!
     @IBOutlet weak var LivesLabel: UILabel!
+    
+    var currentScene: SKScene?
     
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
-        if let view = self.view as! SKView?
-        {
-            // Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: "GameScene")
-            {
-                // Set the scale mode to scale to fit the window
-                scene.scaleMode = .aspectFill
-                
-                // Present the scene
-                view.presentScene(scene)
-            }
-            
-            view.ignoresSiblingOrder = true
-        }
-        
+               
         // Initialize the Lives and Score
+        LivesLabel.isHidden = true
+        ScoreLabel.isHidden = true
         CollisionManager.gameViewController = self
-        ScoreManager.Score = 0
-        ScoreManager.Lives = 5
-        updateLivesLabel()
-        updateScoreLabel()
+        
+        SetScene(sceneName: "GameScene")
+        
+        //ScoreManager.Score = 0
+        //ScoreManager.Lives = 5
+        //updateLivesLabel()
+        //updateScoreLabel()
     }
 
     override var shouldAutorotate: Bool {
@@ -67,4 +61,41 @@ class GameViewController: UIViewController {
     {
         LivesLabel.text = "Lives: \(ScoreManager.Lives)"
     }
+    
+    func SetScene(sceneName: String) -> Void
+    {
+        if let view = self.view as! SKView?
+        {
+            
+            // Load the SKScene - store a reference in currentScene
+            currentScene = SKScene(fileNamed: sceneName)
+            
+            if let gameScene = currentScene as? GameScene
+            {
+                gameScene.gameManager = self
+            }
+            
+            // Set the scale mode to scale to fit the window
+            currentScene?.scaleMode = .aspectFill
+            
+            // Present the scene
+            view.presentScene(currentScene)
+            
+            view.ignoresSiblingOrder = true
+        }
+    }
+    
+    func PresentStartScene()
+    {
+        ScoreLabel.isHidden = true
+        LivesLabel.isHidden = true
+    }
+    
+    func PresentEndScene()
+    {
+        ScoreLabel.isHidden = true
+        LivesLabel.isHidden = true
+        SetScene(sceneName: "EndScene")
+    }
+    
 }
