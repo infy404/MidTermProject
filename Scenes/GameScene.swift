@@ -118,5 +118,10 @@ class GameScene: SKScene
         }
         
         CollisionManager.SquaredRadiusCheck(scene: self, object1: plane!, object2: island!)
+        
+        if(ScoreManager.Lives < 1)
+        {
+            gameManager?.PresentEndScene()
+        }
     }
 }
