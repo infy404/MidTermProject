@@ -18,7 +18,7 @@ class Ocean : GameObject
     // LifeCycle Functions
     override func CheckBounds()
     {
-        if(position.y <= -773)
+        if(position.x <= -320)
         {
             Reset()
         }
@@ -26,14 +26,14 @@ class Ocean : GameObject
     
     override func Reset()
     {
-        position.y = 773
+        position.x = 320
     }
     
     // initialization
     override func Start()
     {
         zPosition = 0
-        verticalSpeed = 5.0
+        verticalSpeed = 4.0
     }
     
     override func Update()
@@ -44,6 +44,6 @@ class Ocean : GameObject
     
     func Move()
     {
-        position.y -= verticalSpeed!
+        position.x -= verticalSpeed!
     }
 }

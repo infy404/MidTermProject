@@ -2,8 +2,8 @@
 //  GameViewController.swift
 //  MAPD724-W2022-ICE1
 //
-//  Created by Tom Tsiliopoulos on 2022-01-12.
-//
+// Name:  Shrijan Karki
+// StudentID: 301222636
 
 import UIKit
 import SpriteKit

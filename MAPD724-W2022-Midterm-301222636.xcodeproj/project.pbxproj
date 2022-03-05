@@ -91,7 +91,7 @@
 		E90B324927B497930019C76C /* StartScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
 		E90B324C27B499F60019C76C /* EndScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndScene.swift; sourceTree = "<group>"; };
 		E90B324E27B49A400019C76C /* EndScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = EndScene.sks; sourceTree = "<group>"; };
-		E922296F278FAAC600353E41 /* MAPD724-W2022-ICE4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAPD724-W2022-ICE4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E922296F278FAAC600353E41 /* MAPD724-W2022-Midterm-301222636.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAPD724-W2022-Midterm-301222636.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9222972278FAAC600353E41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9222974278FAAC600353E41 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		E9222976278FAAC600353E41 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -197,7 +197,7 @@
 				E9222A0A27AB51F100353E41 /* Managers */,
 				E9222A012798EBE600353E41 /* GameObjects */,
 				E92229FC2798E1CB00353E41 /* Core */,
-				E9222971278FAAC600353E41 /* MAPD724-W2022-ICE4 */,
+				E9222971278FAAC600353E41 /* MAPD724-W2022-Midterm-301222636 */,
 				E9222970278FAAC600353E41 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -205,12 +205,12 @@
 		E9222970278FAAC600353E41 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E922296F278FAAC600353E41 /* MAPD724-W2022-ICE4.app */,
+				E922296F278FAAC600353E41 /* MAPD724-W2022-Midterm-301222636.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E9222971278FAAC600353E41 /* MAPD724-W2022-ICE4 */ = {
+		E9222971278FAAC600353E41 /* MAPD724-W2022-Midterm-301222636 */ = {
 			isa = PBXGroup;
 			children = (
 				E9222972278FAAC600353E41 /* AppDelegate.swift */,
@@ -220,7 +220,7 @@
 				E9222981278FAAC800353E41 /* LaunchScreen.storyboard */,
 				E92229892798DE6D00353E41 /* Assets */,
 			);
-			path = "MAPD724-W2022-ICE4";
+			path = "MAPD724-W2022-Midterm-301222636";
 			sourceTree = "<group>";
 		};
 		E92229892798DE6D00353E41 /* Assets */ = {
@@ -350,9 +350,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E922296E278FAAC600353E41 /* MAPD724-W2022-ICE4 */ = {
+		E922296E278FAAC600353E41 /* MAPD724-W2022-Midterm-301222636 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E9222986278FAAC800353E41 /* Build configuration list for PBXNativeTarget "MAPD724-W2022-ICE4" */;
+			buildConfigurationList = E9222986278FAAC800353E41 /* Build configuration list for PBXNativeTarget "MAPD724-W2022-Midterm-301222636" */;
 			buildPhases = (
 				E922296B278FAAC600353E41 /* Sources */,
 				E922296C278FAAC600353E41 /* Frameworks */,
@@ -362,9 +362,9 @@
 			);
 			dependencies = (
 			);
-			name = "MAPD724-W2022-ICE4";
+			name = "MAPD724-W2022-Midterm-301222636";
 			productName = "MAPD724-W2022-ICE1";
-			productReference = E922296F278FAAC600353E41 /* MAPD724-W2022-ICE4.app */;
+			productReference = E922296F278FAAC600353E41 /* MAPD724-W2022-Midterm-301222636.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -382,7 +382,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E922296A278FAAC600353E41 /* Build configuration list for PBXProject "MAPD724-W2022-ICE4" */;
+			buildConfigurationList = E922296A278FAAC600353E41 /* Build configuration list for PBXProject "MAPD724-W2022-Midterm-301222636" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -395,7 +395,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E922296E278FAAC600353E41 /* MAPD724-W2022-ICE4 */,
+				E922296E278FAAC600353E41 /* MAPD724-W2022-Midterm-301222636 */,
 			);
 		};
 /* End PBXProject section */
@@ -648,13 +648,14 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ca.centennialcollege.MAPD724-W2022-ICE4";
-				PRODUCT_NAME = "MAPD724-W2022-ICE4";
+				PRODUCT_NAME = "MAPD724-W2022-Midterm-301222636";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -677,13 +678,14 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ca.centennialcollege.MAPD724-W2022-ICE4";
-				PRODUCT_NAME = "MAPD724-W2022-ICE4";
+				PRODUCT_NAME = "MAPD724-W2022-Midterm-301222636";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -693,7 +695,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E922296A278FAAC600353E41 /* Build configuration list for PBXProject "MAPD724-W2022-ICE4" */ = {
+		E922296A278FAAC600353E41 /* Build configuration list for PBXProject "MAPD724-W2022-Midterm-301222636" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E9222984278FAAC800353E41 /* Debug */,
@@ -702,7 +704,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E9222986278FAAC800353E41 /* Build configuration list for PBXNativeTarget "MAPD724-W2022-ICE4" */ = {
+		E9222986278FAAC800353E41 /* Build configuration list for PBXNativeTarget "MAPD724-W2022-Midterm-301222636" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E9222987278FAAC800353E41 /* Debug */,

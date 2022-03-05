@@ -18,7 +18,7 @@ class Island : GameObject
     // LifeCycle Functions
     override func CheckBounds()
     {
-        if(position.y <= -730)
+        if(position.x <= -650)
         {
             Reset()
         }
@@ -26,10 +26,10 @@ class Island : GameObject
     
     override func Reset()
     {
-        position.y = 730
-        // get a pseudo random number -313 to 313
-        let randomX:Int = (randomSource?.nextInt(upperBound: 616))! - 313
-        position.x = CGFloat(randomX)
+        position.x = 640
+        // get a pseudo random number -320 to 320
+        let randomX:Int = (randomSource?.nextInt(upperBound: 640))! - 320
+        position.y = CGFloat(randomX)
         isCollding = false
     }
     
@@ -49,6 +49,6 @@ class Island : GameObject
     
     func Move()
     {
-        position.y -= verticalSpeed!
+        position.x -= verticalSpeed!
     }
 }
